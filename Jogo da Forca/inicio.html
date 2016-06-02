@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JOGO DA FORCA | HOME</title>
+    <meta name="description" content="Página Inicial do Jogo da Forca">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- STANDARD W3.CSS -->
+    <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/lib/w3.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- JQUERY -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="w3-container w3-blue">
+        <img class="logo1" alt="logo do jogo" src="img/logo.png" />
+        <img class="logo2" alt="logo do jogo mini" src="img/minilogo.png" />
+
+        <ul class="w3-navbar w3-black w3-large">
+            <li><a class="w3-white" href="inicio.html">Jogar</a></li>
+            <li><a href="scores/scores.html">Scores</a></li>
+            <li><a href="instrucoes/instrucoes.html">Instruções</a></li>
+            <li><a href="registo/registo.html">Registo</a></li>
+            <li class="w3-dropdown-hover">
+                <a href="#">Sobre</a>
+                <div class="w3-dropdown-content w3-white w3-card-4">
+                    <a href="sobre/sobre.html#projecto">...o projecto</a>
+                    <a href="sobre/sobre.html#autores">...os autores</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <!-- FIM DO CABEÇALHO -->
+
+    <div class="w3-container w3-light-grey w3-center">
+        <h1>Inicia a tua sessão</h1>
+
+        <div id="sucessoLogin" class="w3-container w3-section w3-green" style="display: none;">
+            <span onclick="this.parentElement.style.display='none';" class="w3-closebtn">&times;</span>
+        </div>
+        <div id="erroLogin" class="w3-container w3-section w3-red" style="display: none;">
+            <span onclick="this.parentElement.style.display='none';" class="w3-closebtn">&times;</span>
+            <h3>Erro!</h3>
+            <p>O username não existe ou a palava-passe está errada.</p>
+        </div>
+
+        <form id="login" class="w3-container w3-margin-top w3-margin-bottom" name="login">
+            <label class="w3-label w3-validate w3-text-blue w3-large">USERNAME</label>
+            <input class="w3-input w3-border w3-center espacoTexto w3-margin-bottom" placeholder="Coloca o teu username" type="text" maxlength="20" name="username" required>
+            <label class="w3-label w3-validate w3-text-blue w3-large">PASSWORD</label>
+            <input class="w3-input w3-border w3-center espacoTexto" placeholder="Coloca a tua password" type="password" maxlength="12" name="password" required>
+        </form>
+
+        <button class="w3-btn w3-green w3-margin-top w3-margin-bottom w3-xlarge">LOGIN</button>
+
+        <a id="saltar" class="w3-btn w3-red w3-margin-top w3-margin-bottom w3-xlarge" href="jogo/jogo.html">saltar</a>
+    </div>
+
+    <!-- RODAPE -->
+    <footer class="w3-container w3-dark-grey">
+        <p class="w3-small w3-center">ITW 2016 | GRUPO 51</p>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

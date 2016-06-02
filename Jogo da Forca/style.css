@@ -1,0 +1,166 @@
+/* Fonte pixelizada */
+
+@font-face {
+    font-family: 'pixel';
+    src: url('fonts/Square.ttf') format('truetype');
+}
+
+.pixel {
+    font-family: 'pixel', monospace;
+    font-size: 2.5em;
+}
+
+
+/* Esconder/Aparecer */
+
+@media (max-width:520px) {
+    .logo1 {
+        display: none !important
+    }
+    .video1 {
+        width: 200px;
+    }
+}
+
+@media (min-width:521px) {
+    .logo2 {
+        display: none !important
+    }
+    .video1 {
+        width: 400px;
+    }
+}
+
+
+/* 'voltar atras' */
+
+.back:hover {
+    color: gray;
+}
+
+
+/* LINK BOTAO */
+
+button a {
+    text-decoration: none;
+}
+
+
+/* AUDIO */
+
+footer audio {
+    display: block;
+    margin: auto;
+}
+
+
+/* REGISTO */
+
+.espacoTexto {
+    max-width: 300px;
+    margin: auto;
+}
+
+
+/* RELOGIO */
+
+#relogio {
+    line-height: 6rem;
+    width: 6rem;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 25px;
+    background-color: skyblue;
+    color: white;
+    border-radius: 50%;
+    clear: both;
+}
+
+
+/* JOGO */
+
+#botao {
+    background-color: lightgrey;
+    box-shadow: 0px 2px 2px black;
+}
+
+#botao:active {
+    background-color: lightgrey;
+    box-shadow: 1px 0px 0px black;
+}
+
+#tracinhos {
+    font-size: 1.4em;
+}
+
+#elemJogo {
+    display: none;
+    max-width: 750px;
+    margin: auto;
+}
+
+#elemJogo div img {
+    float: left;
+}
+
+#direita {
+    float: right;
+}
+
+#registoScore {
+    clear: both;
+}
+
+#letrasErradas {
+    color: red;
+}
+
+#letrasErradas h4 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: black;
+}
+
+#preferencias h1 {
+    font-weight: bold;
+    color: dodgerblue;
+    text-shadow: 0px 1px 1px black;
+}
+
+#novoJogo,
+#registoScore {
+    display: none;
+}
+
+
+/* preferencias */
+
+.negrito {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.caixa {
+    max-width: 400px;
+    margin: auto;
+    font-family: 'pixel', monospace;
+}
+
+.caixa a {
+    text-decoration: none;
+}
+
+
+/* Comprimento barras dropdown */
+
+.espaco {
+    max-width: 100px;
+    margin: auto;
+}
+
+
+/* TABELA SCORES */
+
+tr:nth-child(even) {
+    background-color: darkgray;
+}
